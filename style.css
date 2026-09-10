@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.boxizing{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 200px;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    animation-name: box;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes box {
+    0% {
+        background-color: blue;
+        transform: scale(1.5);
+    }
+
+    15%{
+        background-color: rgb(180, 70, 180);
+        width: 180px;
+        height: 180px;
+        border-radius: 25px;
+    }
+
+    50%{
+        background-color: plum;
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+    }
+
+    75%{
+        background-color: rgb(219, 117, 117);
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+}
